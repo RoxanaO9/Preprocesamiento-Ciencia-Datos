@@ -5,7 +5,6 @@ __pycache__/
 
 # Editor / IDE
 .vscode/
-.idea/
 
 # Env
 .env
