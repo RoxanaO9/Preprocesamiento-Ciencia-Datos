@@ -8,7 +8,7 @@ def es_primo(num):
             return False # si existe un divisor, no es primo
     return True # Si no se encontraron divisores, es primo
 
-def encontrar_primos_en_rango(inicio, fin):
+def encontrar_primos(inicio, fin):
     primos = [] # Almacena los numeros primos encontrados
     for num in range(inicio, fin + 1):
         if es_primo(num):
@@ -17,7 +17,7 @@ def encontrar_primos_en_rango(inicio, fin):
 
 if __name__ == "__main__":
     inicio = time.time() # Marca el tiempo de inicio
-    primos = encontrar_primos_en_rango(1, 100000) 
+    primos =  encontrar_primos(1, 100000)
     fin = time.time()  # Marca el tiempo de fin
     tiempo_total = fin - inicio # Calcula el tiempo total de ejecución
     print(f"Números primos encontrados: {len(primos)}")
