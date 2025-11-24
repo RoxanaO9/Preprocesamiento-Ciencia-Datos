@@ -21,4 +21,4 @@ if __name__ == "__main__":
     fin = time.time()
     tiempo_total = fin - inicio
     print(f"Números primos encontrados: {len(primos)}")
-    print(f"Tiempo total de ejecución: {tiempo_total:.2f} segundos")
+    print(f"Tiempo total de ejecución: {tiempo_total:.3f} segundos")
